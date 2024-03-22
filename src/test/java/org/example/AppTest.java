@@ -1,8 +1,13 @@
 package org.example;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-import junit.framework.Test;
+
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+
+import java.util.ArrayList;
+
 
 /**
  * Unit test for simple App.
@@ -10,6 +15,18 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+    public void TestNom(){
+        Participant joueurs = new Participant();
+
+        Joueur Kilian = new Joueur("Mbappe", "Kilian", "Kiki");
+        //assertEquals(true, Kilian.ModifierNom(nom));
+        //assertEquals(true, Kilian.SetScore(score));
+        assertEquals(7, Kilian. MockGetScoreKiki());
+        assertEquals("Mbappe", Kilian.MockGetNomKiki());
+        assertEquals("Kilian", Kilian.MockGetPrenomKiki());
+        assertEquals("Kiki",Kilian.MockGetPseudonymeKiki());
+        assertEquals(true, joueurs.ajouterjoueur(Kilian));
+    }
     /**
      * Create the test case
      *
@@ -23,7 +40,7 @@ public class AppTest
     /**
      * @return the suite of tests being tested
      */
-    public static Test suite()
+    /*public static Test suite()
     {
         return new TestSuite( AppTest.class );
     }
