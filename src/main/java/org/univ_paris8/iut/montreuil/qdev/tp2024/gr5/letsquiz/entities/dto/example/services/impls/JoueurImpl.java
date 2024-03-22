@@ -1,8 +1,9 @@
 package org.univ_paris8.iut.montreuil.qdev.tp2024.gr5.letsquiz.entities.dto.example.services.impls;
 
-import org.example.entities.dto.JoueurDTO;
-import org.example.services.interfaces.IJoueur;
-import org.example.utils.pseudoNonUniqueException;
+
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr5.letsquiz.entities.dto.example.entities.dto.JoueurDTO;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr5.letsquiz.entities.dto.example.services.interfaces.IJoueur;
+import org.univ_paris8.iut.montreuil.qdev.tp2024.gr5.letsquiz.entities.dto.example.utils.pseudoNonUniqueException;
 
 import java.util.ArrayList;
 
