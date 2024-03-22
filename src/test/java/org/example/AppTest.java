@@ -1,6 +1,7 @@
 package org.example;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 
 import junit.framework.TestCase;
@@ -26,6 +27,7 @@ public class AppTest
         assertEquals("Kilian", Kilian.MockGetPrenomKiki());
         assertEquals("Kiki",Kilian.MockGetPseudonymeKiki());
         assertEquals(true, joueurs.ajouterjoueur(Kilian));
+        assertThrows();
     }
     /**
      * Create the test case
