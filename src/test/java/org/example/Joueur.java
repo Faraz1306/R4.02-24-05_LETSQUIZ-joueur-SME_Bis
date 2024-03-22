@@ -12,16 +12,19 @@ public class Joueur{
         this.pseudonyme = pseudonyme;
 
     }
-    public int MockGetScoreKiki(){
+    public int MockGetScore(){
         return 7;
     }
-    public String MockGetNomKiki(){
+    public String MockGetNom(){
         return "Mbappe";
     }
-    public String MockGetPrenomKiki(){
+    public String MockGetPrenom(){
         return "Kilian";
     }
-    public String MockGetPseudonymeKiki(){
+    public String MockGetPseudonyme(){
         return "Kiki";
+    }public boolean MockSetscore(int score){
+        this.score = score;
+        return true;
     }
 }

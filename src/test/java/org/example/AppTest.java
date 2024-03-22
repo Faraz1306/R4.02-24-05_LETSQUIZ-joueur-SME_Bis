@@ -20,14 +20,22 @@ public class AppTest
         Participant joueurs = new Participant();
 
         Joueur Kilian = new Joueur("Mbappe", "Kilian", "Kiki");
+        Joueur Titouan = new Joueur("Titouan", "Deschamp", "Titi");
         //assertEquals(true, Kilian.ModifierNom(nom));
         //assertEquals(true, Kilian.SetScore(score));
-        assertEquals(7, Kilian. MockGetScoreKiki());
-        assertEquals("Mbappe", Kilian.MockGetNomKiki());
-        assertEquals("Kilian", Kilian.MockGetPrenomKiki());
-        assertEquals("Kiki",Kilian.MockGetPseudonymeKiki());
+        assertEquals(7, Kilian. MockGetScore());
+        assertEquals("Mbappe", Kilian.MockGetNom());
+        assertEquals("Kilian", Kilian.MockGetPrenom());
+        assertEquals("Kiki",Kilian.MockGetPseudonyme());
         assertEquals(true, joueurs.ajouterjoueur(Kilian));
-        assertThrows();
+        assertEquals(7, Kilian. MockGetScore());
+        assertEquals("Deschamp", Titouan.MockGetNom());
+        assertEquals("Titouan", Titouan.MockGetPrenom());
+        assertEquals("Titi",Titouan.MockGetPseudonyme());
+        assertEquals(true, joueurs.ajouterjoueur(Titouan));
+        assertEquals(true,Titouan.MockSetscore(7));
+        assertEquals(4,Titouan.MockGetScore());
+
     }
     /**
      * Create the test case
