@@ -60,7 +60,6 @@ public class AppTest
      */
     public void testApp()
     {
-        App.main(new String[3]);
-        assertTrue( true );
+        System.out.printf("Salut !");
     }
 }

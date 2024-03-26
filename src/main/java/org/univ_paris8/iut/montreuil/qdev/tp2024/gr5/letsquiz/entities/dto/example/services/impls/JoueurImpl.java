@@ -34,5 +34,22 @@ public class JoueurImpl implements IJoueur {
         System.out.printf( "Pseudo ajouté: " + j.getPseudonyme() );
     }
 
+    public void ajouterJoueur2( ArrayList<JoueurDTO> listeJoueur, JoueurDTO j) throws pseudoNonUniqueException {
+
+        if ( j.getPseudonyme().isEmpty() ) { System.out.printf("Le pseudo est vide !"); }
+
+        if (!listeJoueur.isEmpty()) {
+
+            for( int i = 0 ; i < listeJoueur.size() ; i++ ) {
+                if (j.getPseudonyme().equals(listeJoueur.get(i).getPseudonyme())) {
+                    throw new pseudoNonUniqueException("Pseudo déja existant ! : " + j.getPseudonyme() ) ;
+                }
+            }
+
+        }
+
+        listeJoueur.add(j) ;
+        System.out.printf( "Pseudo ajouté: " + j.getPseudonyme() );
+    }
 
 }
